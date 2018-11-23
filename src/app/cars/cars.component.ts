@@ -9,7 +9,7 @@ export class CarsComponent {
 
   addCarStatus = '';
 
-  inputText = '';
+  inputText = 'Default';
 
 
   constructor() {}
@@ -17,18 +17,7 @@ export class CarsComponent {
   addCar() {
     this.addCarStatus = 'Машина добавлена';
   }
-  /*onKeuUp(event: Event) {
-    //console.log(event);
-    this.inputText = (<HTMLInputElement>event.target).value;
-  }*/
-  /*onKeuUp(value) {
-    this.inputText = value;
-  }*/
-  onKeuUp(event) {
-    /*if (event.code === 'Enter') {
-        this.inputText = event.target.value;
-    }*/
-
+  onKeyUp(event) {
     this.inputText = event.target.value;
   }
 

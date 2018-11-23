@@ -7,8 +7,6 @@
 
 <hr />
 
-<!--<input class="form-control" type="text" (input)="onKeuUp($event)" />-->
-<!--<input class="form-control" type="text" #myInp (input)="onKeuUp(myInp.value)" />-->
-<!--<input class="form-control" type="text" (keyup)="onKeuUp($event)" />-->
-<input class="form-control" type="text" (keyup.enter)="onKeuUp($event)" />
+<input class="form-control" type="text" (keyup.enter)="onKeyUp($event)" />
+<input class="form-control" type="text" [(ngModel)]="inputText" />
 <p>{{inputText}}</p>

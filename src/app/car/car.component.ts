@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  //selector: 'app-car',
-  //selector: '[appCar]',
-  selector: '.appCar', // id использовать нельзя
+  selector: 'app-car',
   templateUrl: './car.component.html',
   styleUrls: ['./car.component.css']
 })

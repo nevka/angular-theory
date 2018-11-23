@@ -10,12 +10,10 @@
 <!--<app-car *ngFor="let car of cars"></app-car>-->
 
 <ul>
-    <li *ngFor="let car of cars; let i = index">
-        <div
-            [ngStyle]="{'background-color': (i + 1) % 2 === 0 ? 'red' : 'black', color: 'white'}"
-            [ngClass]="{'big-text': setBigCarLength(car)}"
-        >
-            <b>{{i+1}}</b> - {{car}}
+    <li *ngFor="let date of dates; let i = index">
+        <div>
+            <!--<b>{{i+1}}</b> - {{date | date: 'short'}}-->
+            <b>{{i+1}}</b> - {{date | uppercase}}
         </div>
     </li>
 </ul>

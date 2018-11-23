@@ -7,13 +7,23 @@ import { Component } from '@angular/core';
 })
 export class CarsComponent {
 
-    carCarStatus = false;
+  carCarStatus = false;
   carName = '';
+
+  cars = ['Ford', 'Audi', 'BMV'];
+
+  items = [
+      {id: 2, name: 'item 2'},
+      {id: 9, name: 'item 9'},
+      {id: 1, name: 'item 1'},
+  ];
 
   constructor() {}
 
   addCar() {
     this.carCarStatus = true;
+    this.cars.push(this.carName);
+    this.carName = '';
   }
 
 }

@@ -7,19 +7,13 @@ import { Component } from '@angular/core';
 })
 export class CarsComponent {
 
-  addCarStatus = '';
-
-  inputText = 'Default';
-
+    carCarStatus = false;
+  carName = '';
 
   constructor() {}
 
   addCar() {
-    this.addCarStatus = 'Машина добавлена';
+    this.carCarStatus = true;
   }
-  onKeyUp(event) {
-    this.inputText = event.target.value;
-  }
-
 
 }
